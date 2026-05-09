@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Axora — Redefine Everything</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Clash+Display:wght@400;500;600;700&family=Cabinet+Grotesk:wght@300;400;500;700;800&family=Neue+Montreal:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&family=Playfair+Display:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <!-- إضافة مكتبة Font Awesome لتشغيل الأيقونات -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="WhatsApp Image 2026-04-10 at 10.47.28 PM.jpeg"
+    />
+    <link
+      rel="icon"
+      type="image/jpeg"
+      href="WhatsApp Image 2026-04-10 at 10.47.28 PM.jpeg"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="cursor"></div>
+    <div id="cursor-dot"></div>
+
+    <!-- NAV -->
+    <nav id="nav">
+      <a href="#home" class="nav-logo">AXORA<sup>®</sup></a>
+      <div class="nav-center">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Work</a>
+        <a href="#partners">Partners</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="nav-right">
+        <a href="#contact" class="btn-nav">Let's Talk <span>↗</span></a>
+        <button class="hamburger" id="ham">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="mobile-menu" id="mob">
+      <a href="#home" onclick="cm()">Home <span>01</span></a>
+      <a href="#about" onclick="cm()">About <span>02</span></a>
+      <a href="#services" onclick="cm()">Services <span>03</span></a>
+      <a href="#portfolio" onclick="cm()">Work <span>04</span></a>
+      <a href="#partners" onclick="cm()">Partners <span>05</span></a>
+      <a href="#contact" onclick="cm()">Contact <span>05</span></a>
+    </div>
+
+    <!-- HERO -->
+    <section id="home">
+      <canvas id="hero-canvas"></canvas>
+        <h1 class="hero-headline">
+          <span class="line"><span class="line-inner">ENGINEER</span></span>
+          <span class="line"
+            ><span class="line-inner stroke-text">THE</span>
+            <span class="line-inner red-word">FUTURE</span></span
+          >
+          <span class="line"
+            ><span class="line-inner stroke-text">NOW</span></span
+          >
+        </h1>
+        <div class="hero-bottom">
+          <p class="hero-desc rv">
+            We architect systems, experiences, and digital infrastructure that
+            define what's possible — for companies that refuse to be ordinary.
+          </p>
+          <div class="hero-cta rv">
+            <a href="#services" class="btn-primary">Start a Project ↗</a>
+            <a href="#portfolio" class="btn-ghost">View Work</a>
+          </div>
+          <div class="hero-scroll-hint rv">
+            <div class="scroll-wheel"></div>
+            Scroll to explore
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee-section">
+      <div class="marquee-track" id="mq">
+        <div class="marquee-item highlight">AXORA STUDIO</div>
+        <div class="marquee-item">
+          <span class="dot"></span>Digital Strategy
+        </div>
+        <div class="marquee-item"><span class="dot"></span>Engineering</div>
+        <div class="marquee-item"><span class="dot"></span>AI Integration</div>
+        <div class="marquee-item"><span class="dot"></span>UX / UI Design</div>
+        <div class="marquee-item highlight">EST. 2013</div>
+        <div class="marquee-item"><span class="dot"></span>Cloud Infra</div>
+        <div class="marquee-item"><span class="dot"></span>Cybersecurity</div>
+        <div class="marquee-item"><span class="dot"></span>Product Design</div>
+        <div class="marquee-item"><span class="dot"></span>Brand Identity</div>
+        <!-- duplicate -->
+        <div class="marquee-item highlight">AXORA STUDIO</div>
+        <div class="marquee-item">
+          <span class="dot"></span>Digital Strategy
+        </div>
+        <div class="marquee-item"><span class="dot"></span>Engineering</div>
+        <div class="marquee-item"><span class="dot"></span>AI Integration</div>
+        <div class="marquee-item"><span class="dot"></span>UX / UI Design</div>
+        <div class="marquee-item highlight">EST. 2013</div>
+        <div class="marquee-item"><span class="dot"></span>Cloud Infra</div>
+        <div class="marquee-item"><span class="dot"></span>Cybersecurity</div>
+        <div class="marquee-item"><span class="dot"></span>Product Design</div>
+        <div class="marquee-item"><span class="dot"></span>Brand Identity</div>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="about-wrap">
+        <div class="about-top">
+          <div>
+            <div class="section-tag rv">About Axora</div>
+            <h2 class="display rv">
+              WE BUILD<br /><span class="italic">what others</span><br />CAN'T.
+            </h2>
+          </div>
+          <p class="lead rv">
+            Axora is an elite digital engineering studio. We don't just build
+            products — we <strong>engineer competitive advantages</strong>. Our
+            obsession is creating <em>systems that outlast trends</em> and teams
+            that take pride in every pixel and every line of code.
+          </p>
+        </div>
+        <div class="about-cards rv">
+          <div class="about-card">
+            <div class="big-num"><span>200</span>+</div>
+            <p>Projects delivered across 30+ industries globally</p>
+          </div>
+          <div class="about-card">
+            <div class="big-num"><span>98</span>%</div>
+            <p>Client retention — because results speak for themselves</p>
+          </div>
+          <div class="about-card">
+            <div class="big-num"><span>12</span>+</div>
+            <p>Years of innovation since our founding in New York</p>
+          </div>
+          <div class="about-card">
+            <div class="big-num"><span>40</span>+</div>
+            <p>Elite engineers, designers, and AI specialists on staff</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section">
+      <div class="services-wrap">
+        <div class="services-header">
+          <div>
+            <div class="section-tag rv">Services</div>
+            <h2 class="display rv">
+              WHAT WE<br /><span class="italic">do best</span>
+            </h2>
+          </div>
+          <p
+            class="rv"
+            style="
+              max-width: 340px;
+              color: var(--muted);
+              font-weight: 300;
+              line-height: 1.8;
+              font-size: 0.95rem;
+            "
+          >
+            End-to-end solutions engineered to perform under pressure and scale
+            without limits.
+          </p>
+        </div>
+        <div class="service-list rv">
+          <div class="service-row">
+            <div class="service-num">01</div>
+            <div class="service-body">
+              <h3>Digital Strategy &amp; Consulting</h3>
+              <p>
+                Data-driven roadmaps that align technology with business
+                outcomes.
+              </p>
+            </div>
+            <div class="service-tags">
+              <span class="tag-pill">Research</span>
+              <span class="tag-pill">Roadmapping</span>
+              <span class="tag-pill">Audit</span>
+            </div>
+          </div>
+          <div class="service-row">
+            <div class="service-num">02</div>
+            <div class="service-body">
+              <h3>UX / UI Design</h3>
+              <p>
+                Interfaces that convert, retain, and leave a lasting impression.
+              </p>
+            </div>
+            <div class="service-tags">
+              <span class="tag-pill">Figma</span>
+              <span class="tag-pill">Prototyping</span>
+              <span class="tag-pill">Systems</span>
+            </div>
+          </div>
+          <div class="service-row">
+            <div class="service-num">03</div>
+            <div class="service-body">
+              <h3>Full-Stack Engineering</h3>
+              <p>
+                Battle-tested code with clean architecture and zero technical
+                debt.
+              </p>
+            </div>
+            <div class="service-tags">
+              <span class="tag-pill">React</span>
+              <span class="tag-pill">Node.js</span>
+              <span class="tag-pill">Cloud</span>
+            </div>
+          </div>
+          <div class="service-row">
+            <div class="service-num">04</div>
+            <div class="service-body">
+              <h3>Cloud Infrastructure</h3>
+              <p>
+                Scalable, resilient systems that handle millions of users
+                without a sweat.
+              </p>
+            </div>
+            <div class="service-tags">
+              <span class="tag-pill">AWS</span>
+              <span class="tag-pill">Kubernetes</span>
+              <span class="tag-pill">DevOps</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="section">
+      <div class="portfolio-wrap">
+        <div class="portfolio-header">
+          <div class="section-tag rv">Selected Work</div>
+          <h2 class="display rv">
+            PROJECTS<br /><span class="italic">that matter</span>
+          </h2>
+        </div>
+        <div class="portfolio-bento rv">
+          <div class="p-card">
+            <div class="p-card-grid">
+              <img
+                src="Screenshot 2026-02-18 214953.png"
+                class="p-card-bg pb-1"
+                alt="Project 1"
+              />
+            </div>
+            <span class="p-card-label">SaaS Platform</span>
+            <div class="p-card-info">
+              <div class="p-card-tag">js · React</div>
+              <div class="p-card-info-bottom">
+                <div class="p-card-title">website to food</div>
+                <a href="https://stellar-gaufre-9c889f.netlify.app/" class="p-card-link-btn"><i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="p-card">
+            <div class="p-card-grid">
+              <img
+                src="Screenshot 2026-04-13 175646.png"
+                class="p-card-bg pb-2"
+                alt="Project 2"
+              />
+            </div>
+            <span class="p-card-label">Fintech App</span>
+            <div class="p-card-info">
+              <div class="p-card-tag">UI/UX · React</div>
+              <div class="p-card-info-bottom">
+                <div class="p-card-title">Vex DeFi Crypto Wallet</div>
+                <a href="https://ladonnaelamir.my.canva.site/existing-product-service-promotions-website-in-black-violet-techflux-style" class="p-card-link-btn"><i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="p-card">
+            <div class="p-card-grid">
+              <img
+                src="Screenshot 2026-04-13 175909.png"
+                class="p-card-bg pb-3"
+                alt="Project 3"
+              />
+            </div>
+            <span class="p-card-label">Digital Store</span>
+            <div class="p-card-info">
+              <div class="p-card-tag">E-Commerce · Next.js</div>
+              <div class="p-card-info-bottom">
+                <div class="p-card-title">Krone Luxury Experience</div>
+                <a href="#" class="p-card-link-btn"><i class="fa-solid fa-arrow-right"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <div class="contact-wrap">
+        <div class="contact-grid">
+          <div class="contact-left rv-l">
+            <div class="section-tag">Contact</div>
+            <h2 class="display">
+              LET'S<br /><span class="italic">build</span><br />TOGETHER.
+            </h2>
+            <p class="sub">
+              Got a project in mind? We'd love to hear about it. Send us a
+              message and we'll get back within 24 hours.
+            </p>
+            <div class="contact-items">
+              <div class="c-item">
+                <div class="c-icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <span>42 Innovation District, New York, NY 10001</span>
+              </div>
+              <div class="c-item">
+                <div class="c-icon"><i class="fa-solid fa-envelope"></i></div>
+                <span>zakinagawa17@gmail.com</span>
+              </div>
+              <div class="c-item">
+                <div class="c-icon"><i class="fa-solid fa-phone"></i></div>
+                <span>+20 1225127569</span>
+              </div>
+            </div>
+            <div class="socials">
+              <a
+                href="https://www.facebook.com/nagwazki"
+                class="social-btn"
+                target="_blank"
+                title="Facebook"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com"
+                class="social-btn"
+                target="_blank"
+                title="LinkedIn"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/nagwa__zaki?utm_source=qr&igsh=MWJ1Y21ka2c5bzN2Yw=="
+                class="social-btn"
+                target="_blank"
+                title="Instagram"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.tiktok.com/@nagwazaki2"
+                class="social-btn"
+                target="_blank"
+                title="TikTok"
+                ><i class="fab fa-tiktok"></i
+              ></a>
+            </div>
+          </div>
+          <div class="contact-form rv-r">
+            <div class="form-row">
+              <div class="fg">
+                <input type="text" id="firstName" placeholder=" " />
+                <label for="firstName">First Name</label>
+                <fieldset aria-hidden="true">
+                  <legend><span>First Name</span></legend>
+                </fieldset>
+              </div>
+              <div class="fg">
+                <input type="text" id="lastName" placeholder=" " />
+                <label for="lastName">Last Name</label>
+                <fieldset aria-hidden="true">
+                  <legend><span>Last Name</span></legend>
+                </fieldset>
+              </div>
+            </div>
+            <div class="fg">
+              <input type="email" id="email" placeholder=" " />
+              <label for="email">Email</label>
+              <fieldset aria-hidden="true">
+                <legend><span>Email</span></legend>
+              </fieldset>
+            </div>
+            <div class="fg">
+              <select id="serviceSelect" required>
+                <option value="" disabled selected hidden></option>
+                <option>Digital Strategy</option>
+                <option>UX / UI Design</option>
+                <option>Engineering</option>
+                <option>AI Integration</option>
+                <option>Cybersecurity</option>
+                <option>Cloud Infrastructure</option>
+              </select>
+              <label for="serviceSelect">Select a service...</label>
+              <fieldset aria-hidden="true">
+                <legend><span>Select a service...</span></legend>
+              </fieldset>
+            </div>
+            <div class="fg">
+              <textarea id="message" placeholder=" "></textarea>
+              <label for="message">Write Message</label>
+              <fieldset aria-hidden="true">
+                <legend><span>Write Message</span></legend>
+              </fieldset>
+            </div>
+            <button class="submit-btn" onclick="sendMsg(this)">
+              Send Message ↗
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-main">
+        <div class="footer-col about">
+          <div class="footer-logo">AXORA<sup>®</sup></div>
+          <p class="footer-desc">
+            Redefining digital excellence through elite engineering and
+            visionary design. We build systems that outlast trends.
+          </p>
+          <div class="socials">
+            <!-- استخدام نفس نمط قسم التواصل لضمان الظهور والتناسق -->
+            <a
+              href="https://www.facebook.com/nagwazki"
+              class="social-btn"
+              target="_blank"
+              title="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com"
+              class="social-btn"
+              target="_blank"
+              title="LinkedIn"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/nagwa__zaki?utm_source=qr&igsh=MWJ1Y21ka2c5bzN2Yw=="
+              class="social-btn"
+              target="_blank"
+              title="Instagram"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a
+              href="https://www.tiktok.com/@nagwazaki2"
+              class="social-btn"
+              target="_blank"
+              title="TikTok"
+              ><i class="fab fa-tiktok"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#portfolio">Work</a>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <a href="#">Digital Strategy</a>
+          <a href="#">UX / UI Design</a>
+          <a href="#">Engineering</a>
+          <a href="#">Cloud Solutions</a>
+        </div>
+        <div class="footer-col">
+          <h4>Say Hello</h4>
+          <p>zakinagawa17@gmail.com</p>
+          <p>+20 1225127569</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Axora Inc. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
